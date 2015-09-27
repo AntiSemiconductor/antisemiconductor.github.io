@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +6,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>アンチ二次元同盟(仮)</title>
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+        <link rel="stylesheet" href="css/bootstrap.css">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -16,64 +14,210 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <link href="css/styles.css" rel="stylesheet">
-    </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/carousel.js"></script>
 
+    </head>
     <body>
         <div class="navbar-wrapper">
-            <div class ="container">
-                <nav class="navbar navbar-inverse navbar-static-top">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                                    aria-expandet="false" aria-controls="navbar">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-var"></span>
-                                <span class="icon-var"></span>
-                                <span class="icon-var"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">アンチ二次元同盟</a>
-                        </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="about-sora.html">About Sora</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="http://anti2d.blog.fc2.com">Blog</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">過去の活動
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="http://antisemiconductor.blog.fc2.com">アンチ半導体同盟(仮) Blog</a></li>
-                                        <li><a href="https://www.youtube.com/user/AntiSemiconductor">アンチ半導体同盟(仮) YouTube</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+  <div class ="container">
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button"
+                  class="navbar-toggle collapsed"
+                  data-toggle="collapse" data-target="#navbar"
+                  aria-expandet="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-var"></span>
+            <span class="icon-var"></span>
+            <span class="icon-var"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">アンチ二次元同盟</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about-sora">About Sora</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="http://anti2d.blog.fc2.com">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"
+                 data-toggle="dropdown"
+                 role="button"
+                 aria-haspopup="true"
+                 aria-expanded="false">
+                過去の活動
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="http://antisemiconductor.blog.fc2.com">アンチ半導体同盟(仮) Blog</a></li>
+                <li><a href="https://www.youtube.com/user/AntiSemiconductor">アンチ半導体同盟(仮) YouTube</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<section class="header-carousel">
+    <div id="headerImage" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#headerImage" data-slide-to="0" class="active"></li>
+            <li data-target="#headerImage" data-slide-to="1"></li>
+            <li data-target="#headerImage" data-slide-to="2"></li>
+            <li data-target="#headerImage" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active"
+                 style="background-image: url(img/header/headerimage2.jpg); background-size:100%;"></div>
+            <div class="item"
+                 style="background-image: url(img/header/headerimage1.jpg)"></div>
+
+            <div class="item"
+                 style="background-image: url(img/header/image3.jpg)"></div>
+            <div class="item"
+                 style="background-image: url(img/header/image4.jpg)"></div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control"
+           href="#headerImage" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#headerImage"
+           role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<!-- 展示について -->
+<section id="about-exibit" class="bg2">
+    <div class="container">
+        <div class="head-divider"></div>
+        <h1 id="events" class="heading">どんな展示?</h1>
+        <div class="main-text">
+            <div class="container lead">
+                <p>AR技術を使うと現実に存在しないものを存在するかのように見せることができます。</p>
+                <p>この展示ではAR技術によって空ちゃんという女の子と、コミュニケーションを取ることができます。</p>
+                <p>空ちゃんとの会話を通して、あったかもしれない高校生活を疑似体験しましょう。</p>
+            </div>
+            <!-- <p class="lead">展示予定</p>
+            <p class="text-left">工大祭での展示</p> -->
+        </div>
+    </div>
+</section>
+<!--
+<section id="hoge" class="bg4">
+<div class="container">
+<div class="head-divider"></div>
+<h1 class="heading">いないけど会える</h1>
+<div class="main-text container lead">AR技術で可能になること</div>
+</div>
+</section>
+-->
+<!-- プロダクションノート -->
+<section id="production-note" class="bg3">
+    <div class="container">
+        <!-- <h1 class="heading">企画書</h1> -->
+        <div class="head-divider"></div>
+        <div class="main-text">
+            <div class="row" style="text-align:center">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <h2>企画名</h2>
+                    <p class="lead">『A(i)R彼女』</p>
+                </div>
+                <div class="col-md-3">
+                    <h2>対象</h2>
+                    <p class="lead">かつて高校生だったすべての人々</p>
+                </div>
+            </div>
+            <div class="row" style="text-align:center">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <h2>プレイ時間</h2>
+                    <p class="lead">５分〜１０分</p>
+                </div>
+                <div class="col-md-3">
+                    <h2>設定</h2>
+                    <p class="lead">ありふれた共学の高校<br>なんでもない日の放課後</p>
+                </div>
+            </div>
+            <div class="main-text">
+                <h1 class="heading text-center">企画に至る経緯</h1>
+                <div class="head-divider"></div>
+                <p class="lead text-center">「あの時ああしてればっ！」</p>
+                <p>後悔なしの人生を歩んできた人などいない。
+                    「バナナをスーパーで買った帰りに通りかかった八百屋で見たらこっちの方が二割安かった。クソッ」などという小さなものから、
+                    「レポートの締め切りを一週間勘違いして提出できずに単位を落としちまった（涙目）」などというもうちょっと大きなものもあるだろう。
+                    思い出すと必ずうめいて、うずくまりたくなるような後悔も誰にだって一つくらいあるはずだ。</p>
+                <p>後悔は別のもっといい選択肢を選べたという可能性を思い出すことによって生じる。後悔したときに出てくるセリフである「あの時ああしてればっ！」の「ればっ！」の後ろには「～になったのに」というのがくっついて、このセリフを言っている人は選んでしまった選択肢を思い出し、別の選択肢に思いを馳せている。</p>
+                <p>そんな後悔の「もっといい選択肢」を体験させる装置があったら面白いと思った。
+                    実はそれは小説や映画、演劇によって一応実現されている
+                    （読者あるいは観客は作中の人物の追体験をするのだから、
+                    この追体験が「いい選択肢」と合致するならばこれは言っている装置の実現だろう）。
+                    だが、この追体験をもっと臨場感があってインタラクティブなものにできないだろうか。
+                    こちらの体の動きに合わせて周りの状況が変わったり、喋りかけることが出来たり。ついでに立体視とか出来たらいいなぁ…</p>
+
+                <p class="lead text-center">
+                    「AR（拡張現実）技術だ。」
+                </p>
+                <p>ARは現実空間を拡張して、現実には存在しないものがさも存在するかのような体験をもたらしてくれる。これを使って過去のある場面をリプレイするようなコンテンツは面白そうだ。</p>
+
+                <p>別に新しいことを言っている訳ではない。ARなんて２０年以上前からあるし、スマートフォンでみんなが使うようなARコンテンツが出てきているし。</p>
+                <p>でも、世の中にあるARコンテンツって大体が現在ないし未来に目が向いてるように思う。コンテンツが「AR技術でこんなに新しい、面白い新しい世界が切り開けるんですよ」ってプレイヤーに問いかけているように感じる。何だかキラキラした感じ。</p>
+                <p>そうではなくて、過去のリプレイをするようなコンテンツを作ってみたい。過去に目を向けるのだ。そしてリプレイするのは「もっといい選択肢」を選択したら起きていたであろうことだ。</p>
+
+                <p>そんなことを考えつつも、結局は製作者も含めてキャラクターに萌えちゃったりするだけなんだろうなぁ。そう分かりつつも私達アンチ二次元同盟（仮）が送り出す、来場者が少しだけ傷ついて、少しだけ幸福になるかもしれない、そういう拡張現実の企画。</p>
             </div>
         </div>
+        <div class="head-divider"></div>
+</section>
+
+<!-- 団体の説明 -->
+<section id="anti2d" class="bg5">
+    <div class="container">
+        <div class="head-divider"></div>
+        <h1 class="heading">アンチ二次元同盟（仮）とは？</h1>
+        <div class="row main-text">
+            <div class="container">
+                <div class="container col-md-8">
+                    <p class="lead">
+                        東工大を拠点とした<mark>技術系クリエーター集団</mark>です。</p>
+                    <p>二次元を忌み嫌う人たちの集団だと思われる方もいらっしゃるようですが、そうではありません（政治団体でもないです）。
+                        むしろ私たちは二次元に対して敬意を持っているくらいです。
+                        「アンチ二次元同盟（仮）」という名前の意味は、私達の製作するコンテンツが三次元ARであり、
+                        二次元コンテンツではないというくらいです。</p>
+                    <p>私達の集団は2013年の「<a href="http://antisemiconductor.blog.fc2.com">リレー式計算機展</a>」のメンバーを中心に、現在１０名で構成されています。
+                        技術面だけでなくコンテンツとして面白い、お祭り感のあるものを世に送り出すことを目的としています。
+                        キャッチコピーは「技術で一緒にはしゃごっ」。</p>
+                    <p>とりあえずこのところは３次元ARを使ったコミュニケーションゲーム『A(i)R彼女』の製作を中心に活動してます。</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/yoneda_face.JPG"
+                             class="img-responsive img-rounded" alt="代表近影">
+                </div>
+            </div>
+        </div>
+        <div class="head-divider"></div>
+    </div>
+</section>
+<link href="css/carousel.css" rel="stylesheet">
+
+
         <div class="main-text container">
-            <div class="about-container">
-                <h1 id="about" class="heading">About us</h1>
-                <p class="lead">ここに自己紹介が入る</p>
-            </div>
-            <hr class="head-divider"></hr>
-            <div class="events-container">
-                <h1 id="events" class="heading">Events</h1>
-                <p class="lead">展示予定</p>
-                <p class="text-left">工大祭で展示を行います</p>
-            </div>
             <hr class="head-divider"></hr>
             <footer>
                 <p class="pull-right"><a href="#">Back to top</a></p>
                 <p>&copy; 2015 Anti-Semiconductor.</p>
             </footer>
         </div>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 </html>
