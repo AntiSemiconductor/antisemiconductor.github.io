@@ -1,1 +1,42 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);body{font-family:'Noto Sans Japanese',sans-serif;padding-bottom:40px}.bg1{background-color:#0487D9}.bg2{background-color:#F2F2F2}.bg3{background-color:#05DBF2}.bg4{background-color:#0ff2f2}.bg5{background-color:#f2e96d}.main-text{padding-left:30px;padding-right:30px}.navbar-wrapper{position:absolute;top:0;right:0;left:0;z-index:20}.navbar-wrapper > .container{padding-right:0;padding-left:0}.navbar-wrapper .navbar{padding-right:15px;padding-left:15px}.navbar-wrapper .navbar .container{width:auto}.head-divider{margin:80px 0}@media (min-width:768px){.navbar-wrapper{margin-top:20px}.navbar-wrapper .container{padding-right:15px;padding-left:15px}.navbar-wrapper .navbar{padding-right:0;padding-left:0}.navbar-wrapper .navbar{border-radius:4px}.carousel-caption p{margin-bottom:20px;font-size:21px;line-height:1.4}.heading{font-size:40px}}@media (min-width:768px){.navbar-wrapper{margin-top:20px}.navbar-wrapper .container{padding-right:15px;padding-left:15px}.navbar-wrapper .navbar{padding-right:0;padding-left:0}.navbar-wrapper .navbar{border-radius:4px}.carousel-caption p{margin-bottom:20px;font-size:21px;line-height:1.4}.heading{font-size:50px}}@media (min-width:992px){.heading{margin-left:30px}}
+
+.main-text
+{
+  padding-left  : 30px;
+  padding-right : 30px;
+  background    : rgb(255,255,255);
+}
+
+.navbar-wrapper
+{
+  position : absolute;
+  top      : 0px;
+  right    : 0px;
+  left     : 0px;
+  z-index  : 20;
+}
+
+.news-head
+{
+  text-align       : center;
+  color            : rgb(4,135,217);
+  background-color : rgb(242,242,242);
+}
+
+.news-head h1.heading
+{
+  font-size : 5em;
+}
+
+section > div.container
+{
+  padding-top    : 40px;
+  padding-bottom : 40px;
+}
+
+body
+{
+  padding-top : 50px;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */

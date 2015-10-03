@@ -1,0 +1,13 @@
+
+header > nav
+{
+  background     : rgb(255,255,255);
+  color          : rgb(0,68,170);
+  font-size      : 24px;
+  text-transform : uppercase;
+  position       : absolute;
+  bottom         : -72px;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */
