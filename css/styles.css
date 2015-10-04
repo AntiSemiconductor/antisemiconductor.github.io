@@ -35,7 +35,14 @@ section > div.container
 
 body
 {
+  font-family : "Shuei KakuGo Gin L","Helvetica Neue","Helvetica","Arial", sans-serif;
   padding-top : 50px;
+}
+
+footer
+{
+  margin-top    : 20px;
+  margin-bottom : 50px;
 }
 
 
