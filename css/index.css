@@ -1,12 +1,65 @@
+Preprocessing executable 'css-compiler' for anti-hakyll-0.1.0.0...
+[1 of 2] Compiling Carousel         ( css-hs/Carousel.hs, dist/build/css-compiler/css-compiler-tmp/Carousel.o )
+[2 of 2] Compiling Main             ( css-hs/Main.hs, dist/build/css-compiler/css-compiler-tmp/Main.o ) [Carousel changed]
+Linking dist/build/css-compiler/css-compiler ...
+Running css-compiler...
 
-header > nav
+.main-text
 {
-  background     : rgb(255,255,255);
-  color          : rgb(0,68,170);
-  font-size      : 24px;
-  text-transform : uppercase;
-  position       : absolute;
-  bottom         : -72px;
+  padding-left  : 60px;
+  padding-right : 60px;
+  background    : rgb(255,255,255);
+}
+
+.navbar-wrapper
+{
+  position : absolute;
+  top      : 0px;
+  right    : 0px;
+  left     : 0px;
+  z-index  : 20;
+}
+
+.news-head
+{
+  text-align       : center;
+  color            : rgb(4,135,217);
+  background-color : rgb(242,242,242);
+}
+
+.news-head h1.heading
+{
+  font-size : 5em;
+}
+
+section > div.container
+{
+  padding-top    : 40px;
+  padding-bottom : 40px;
+}
+
+body
+{
+  font-family : "Shuei KakuGo Gin L","Helvetica Neue","Helvetica","Arial", sans-serif;
+  padding-top : 50px;
+}
+
+footer
+{
+  margin-top    : 20px;
+  margin-bottom : 50px;
+}
+
+.carousel-inner
+{
+  height : 400px;
+}
+
+.carousel *.item
+{
+  width               : auto;
+  background-size     : cover;
+  background-position : center bottom;
 }
 
 
