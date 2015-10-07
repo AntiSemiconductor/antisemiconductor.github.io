@@ -1,5 +1,5 @@
 Preprocessing executable 'css-compiler' for anti-hakyll-0.1.0.0...
-[1 of 2] Compiling Carousel         ( css-hs/Carousel.hs, dist/build/css-compiler/css-compiler-tmp/Carousel.o )
+[2 of 2] Compiling Main             ( css-hs/Main.hs, dist/build/css-compiler/css-compiler-tmp/Main.o )
 Linking dist/build/css-compiler/css-compiler ...
 Running css-compiler...
 
@@ -39,7 +39,7 @@ section > div.container
 
 body
 {
-  font-family : "Shuei KakuGo Gin L","Helvetica Neue","Helvetica","Arial", sans-serif;
+  font-family : "Shuei KakuGo Gin L","Arial","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic", sans-serif;
   padding-top : 50px;
 }
 
@@ -60,6 +60,11 @@ footer
   width               : 100%;
   background-size     : cover;
   background-position : center bottom;
+}
+
+.heading
+{
+  font-family : "Arial","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic", sans-serif;
 }
 
 
