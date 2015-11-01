@@ -1,3 +1,8 @@
+Preprocessing executable 'css-compiler' for anti-hakyll-0.1.0.0...
+[3 of 4] Compiling Carousel         ( css-hs/Carousel.hs, dist/build/css-compiler/css-compiler-tmp/Carousel.o )
+Linking dist/build/css-compiler/css-compiler ...
+Running css-compiler...
+
 .main-text
 {
   padding-left  : 60px;
@@ -44,12 +49,8 @@ footer
   margin-bottom : 50px;
 }
 
-.carousel-inner
-{
-  height : 400px;
-}
 
-.carousel *.item
+.carousel .item
 {
   height              : 400px;
   width               : 100%;
