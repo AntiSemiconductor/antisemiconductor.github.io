@@ -1,6 +1,4 @@
 Preprocessing executable 'css-compiler' for anti-hakyll-0.1.0.0...
-[4 of 4] Compiling Main             ( css-hs/Main.hs, dist/build/css-compiler/css-compiler-tmp/Main.o )
-Linking dist/build/css-compiler/css-compiler ...
 Running css-compiler...
 
 .main-text
@@ -52,7 +50,8 @@ footer
 
 .carousel .item
 {
-  height              : 400px;
+  height              : 60%;
+  max-height          : 400px;
   width               : 100%;
   background-size     : cover;
   background-position : center bottom;
